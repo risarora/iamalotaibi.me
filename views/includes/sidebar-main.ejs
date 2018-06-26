@@ -1,0 +1,20 @@
+<div id="secondary">
+  <ul>
+    <li><a href="mailto:mail@iamalotaibi.me" id="work-btn">I am currently <strong>accepting new projects</strong> for Spring 2018</a></li>
+    <hr class="breaker">
+    <li id="social-list">
+    <% for(var i=0; i<about.social.length; i++) {%>
+    <a href="<%= about.social[i].link %>" id="<%= about.social[i].title %>" class="social-btn"  target="_blank"><i class="fab fa-<%= about.social[i].title %>" aria-hidden="true"></i></a>
+    <% } %>
+    <a href="mailto:mail@iamalotaibi.me" id="email-icon" class="social-btn"  target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>  </li>
+  <hr class="breaker">
+  <li id="frieinds-list">
+    <strong><i class="fas fa-users"></i> Friends:</strong>
+    <ul id="friends-list">
+      <% for(var i=0; i<about.friends.length; i++) {%>
+      <li><a href="<%= about.friends[i].link %>" class="friends-btn"  target="_blank"><%= about.friends[i].name %></a></li>
+      <% } %>
+    </ul>
+  </li>
+</ul>
+</div>

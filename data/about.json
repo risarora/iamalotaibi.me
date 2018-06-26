@@ -1,0 +1,73 @@
+{
+  "currentTerm": [
+    {
+      "title": "PROBABILITY"
+    },
+    {
+      "title": "COMPUTER VISION (Udacity.com Nanodegree)"
+    }
+  ],
+  "nextTerm": [
+    {
+      "title": "SENIOR SOFTWARE ENGINEERING PROJECT"
+    },
+    {
+      "title": "MATHEMATICAL STATISTICS"
+    },
+    {
+      "title": "OPERATING SYSTEMS II"
+    },
+    {
+      "title": "INTELLIGENT ROBOTS"
+    }
+  ],
+  "currentReadings":[
+    {
+      "title": "Zero to One: Notes on Startups, or How to Build the Future",
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/4137OkbPQ4L._SX331_BO1,204,203,200_.jpg",
+      "buy": "https://read.amazon.com/kp/embed?asin=B00J6YBOFQ&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_D3glBbW1M3A1N"
+    },
+    {
+      "title": "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses",
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/51T-sMqSMiL._SX329_BO1,204,203,200_.jpg",
+      "buy": "https://read.amazon.com/kp/embed?asin=B004J4XGN6&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_q6glBbR1E5HFE"
+    },
+    {
+      "title": "12 Rules for Life: An Antidote to Chaos",
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/41cr8ThOw4L._SX332_BO1,204,203,200_.jpg",
+      "buy": "https://www.amazon.com/12-Rules-Life-Antidote-Chaos/dp/0345816021/ref=asap_bc?ie=UTF8"
+    }
+  ],
+  "friends":[
+    {
+      "name": "Connor Christensen",
+      "link": "http://people.oregonstate.edu/~chriconn/"
+    },
+    {
+      "name": "Lucas Frey",
+      "link": "https://lcsfrey.github.io/"
+    }
+  ],
+  "social":[
+    {
+      "title": "medium",
+      "link": "https://medium.com/@iamalotaibi"
+    },
+    {
+      "title": "linkedin",
+      "link": "https://linkedin.com/in/iamalotaibi"
+    },
+    {
+      "title": "github",
+      "link": "https://github.com/iamalotaibi"
+    },
+    {
+      "title": "twitter",
+      "link": "https://twitter.com/iamalotaibi"
+    },
+    {
+      "title": "spotify",
+      "link": "https://open.spotify.com/user/iamalotaibi"
+    }
+  ]
+}

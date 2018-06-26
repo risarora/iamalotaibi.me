@@ -1,0 +1,27 @@
+
+<footer id="site-footer">
+  <p><i class="fal fa-copyright" aria-hidden="true"></i> 2018, Mazen Alotaibi.</p>
+  <% for(var i=0; i<about.social.length; i++) {%>
+  <a href="<%= about.social[i].link %>" id="<%= about.social[i].title %>" class="social-btn"  target="_blank"><i class="fab fa-<%= about.social[i].title %>" aria-hidden="true"></i></a>
+  <% } %>
+  <a href="mailto:mail@iamalotaibi.me" id="email-icon" class="social-btn"  target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+</footer>
+<script type="text/javascript" src="/js/index.js"></script>
+</div>
+<!-- Drip -->
+<script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {};
+  _dcs.account = '4129482';
+
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true;
+    dc.src = '//tag.getdrip.com/4129482.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
+<!-- end Drip -->
+</body>
+</html>

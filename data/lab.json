@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Self-Driving RC Car ",
+    "tag": "Self-Driving-RC-Car",
+    "date": "05/2018 - Present",
+    "img": "no-image.jpg",
+    "code": "https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen",
+    "demo": "NONE",
+    "summary": "An AI project that aims to allow an RC Car to drive its self and stops when it sees certain traffic signs and objects that blocks the road.",
+    "accomplishments": [
+      {
+        "statement": "Wrote a web app that streams a live-feed and displays a controller using Node.js, JavaScript, and Python a Raspberry Pi through hotspot and web socketing."
+      },
+      {
+        "statement": "Researched and cleaned a set of datasets in a cloud-server to be used to train the machine learning model."
+      },
+      {
+        "statement": "Built the structure of the intelligent agent."
+      }
+    ]
+  },
+  {
+    "title": "Image Classification (Academic)",
+    "tag": "Image-Classification",
+    "date": "05/2018",
+    "img": "no-image.jpg",
+    "code": "https://github.com/iamalotaibi/Display-Me",
+    "demo": "https://displayme.herokuapp.com",
+    "summary": "An ML project that aims to practice image classification using MLP to compare performance to CNN performance.",
+    "accomplishments": [
+      {
+        "statement": "Wrote an MLP Multiple Layer Neural Networks using Python."
+      },
+      {
+        "statement": "Trained the Neural Networks using CIFAR-10 dataset."
+      },
+      {
+        "statement": "Documented and reported the Neural Networks’ accuracy using LATEX."
+      }
+    ]
+  },
+  {
+    "title": "Aces Up Game (Academic)",
+    "tag": "AcesUp-Game",
+    "date": "11/2017 - 12/2017",
+    "img": "no-image.jpg",
+    "code": "https://github.com/iamalotaibi/AcesUp.game",
+    "demo": "https://aceuposu.herokuapp.com/",
+    "summary": "A web game based on the game Aces Up.",
+    "accomplishments": [
+      {
+        "statement": "Wrote a web app using Java (Ninja framework) for back-end and JavaScript for front-end."
+      },
+      {
+        "statement": "Hosted the web app on Heroku using GitHub."
+      },
+      {
+        "statement": "Our Team Won the Best Web Application for Software Engineering I (CS-361)."
+      }
+    ]
+  },
+  {
+    "title": "Ace College",
+    "tag": "Ace-College",
+    "date": "10/2017 - 11/2017",
+    "img": "todoist-for-android-banner.jpg",
+    "code": "https://github.com/iamalotaibi/AceCollege",
+    "demo": "https://acecollege.herokuapp.com",
+    "summary": "A web app aims to improve college student’s performance by keeping track of important tasks.",
+    "accomplishments": [
+      {
+        "statement": "Built a web application using PHP and JavaScript."
+      },
+      {
+        "statement": "Used Relational dataset to store data using SQL (MariaDB)."
+      },
+      {
+        "statement": "Worked with a fellow teammate and documented our work using GitHub's wikipage and LaTeX."
+      }
+    ]
+  },
+  {
+    "title": "Personal Website",
+    "tag": "Personal-Website",
+    "date": "12/2016",
+    "img": "no-image.jpg",
+    "code": "https://github.com/iamalotaibi/iamalotaibi.me",
+    "demo": "https://iamalotaibi.me/",
+    "summary": "A website where I share my current status, thoughts, and projects.",
+    "accomplishments": [
+      {
+        "statement": "Wrote a personal website using NodeJS for back-end and JavaScript for front-end."
+      },
+      {
+        "statement": "Hosted my website on virtual machine (DigitalOcean)."
+      },
+      {
+        "statement": "Wrote a NGINX script that directs HTTP requests to HTTPS and maps networks."
+      }
+    ]
+  },
+  {
+    "title": "A.I. for a 2D Grid Game (Academic)",
+    "tag": "AI-agent",
+    "date": "03/2016",
+    "img": "no-image.jpg",
+    "code": "NONE",
+    "demo": "NONE",
+    "summary": "A simple AI that solves a grid game using the inverse logic of Minesweepers, which performes better than an average human.",
+    "accomplishments": [
+      {
+        "statement": "Wrote a 2D grid game (Hunt the Wumpus) using C++."
+      },
+      {
+        "statement": "Wrote an intelligent agent in C++ that solves the puzzle inspired by Minesweepers."
+      },
+      {
+        "statement": "Acquired code organization skills by modularizing my programs and defining appropriate classes."
+      }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+<%- include('includes/header') %>
+<div id="site-body">
+        <main id="site-content">
+          <div id="primary">
+            <h1>About Me</h1>
+            <div class="img-holder">
+              <img id="about-img" src="/img/mazen-normal.jpeg" alt="">
+            </div>
+            <div id="intro-summary">
+              <p>Hi there, I'm Mazen; I am a college student at Oregon State University, I am majoring in Computer Science Applied in Artificial Intelligence; with minor in Actuarial Science.
+                I am an active memeber in <a href="http://osumlai.club/"><strong>OSU Machine Learning Club</strong></a>.
+                I do some projects on <a href="https://github.com/iamalotaibi"  target="_blank"><strong>GitHub</strong></a> to distract me from school.
+                I am <a href="/cv"><strong>available for work</strong></a>. You could <a href="/contact"><strong>contact me</strong></a>.</p>
+            </div>
+            <div id="hire-area">
+              <a id="hire-btn" href="/cv"  target="_blank">Hire Me</a>
+            </div>
+            <div id="current-github">
+              <!-- Prepare a container for your calendar. -->
+              <div class="calendar">
+                  <!-- Loading stuff -->
+                  Loading the data just for you.
+              </div>
+              <script>
+                  GitHubCalendar(".calendar", "iamalotaibi");
+              </script>
+            </div>
+            <div id="where-i-am">
+              <h2>Current Courses:</h2>
+              <ul>
+                <div class="skill-box">
+                  <li>
+                    <h3>Summer:</h3>
+                    <ul>
+                      <% for(var i=0; i<about.currentTerm.length; i++) {%>
+                      <li><%= about.currentTerm[i].title %></li>
+                      <% } %>
+                    </ul>
+                  </li>
+                </div>
+                <div class="skill-box">
+                  <li>
+                    <h3>Fall:</h3>
+                    <ul>
+                      <% for(var i=0; i<about.nextTerm.length; i++) {%>
+                      <li><%= about.nextTerm[i].title %></li>
+                      <% } %>
+                    </ul>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div id="current-reading">
+              <h2>Current Readings:</h2>
+              <div id="book-cover">
+                <% for(var i=0; i<about.currentReadings.length; i++) {%>
+                  <a href="<%= about.currentReadings[i].buy %>"  target="_blank"><img src="<%= about.currentReadings[i].cover %>" alt="<%= about.currentReadings[i].title %>" title="Read More"></a>
+                <% } %>
+              </div>
+            </div>
+          </div>
+          <%- include('includes/sidebar-main') %>
+        </main>
+      </div>
+<%- include('includes/footer') %>

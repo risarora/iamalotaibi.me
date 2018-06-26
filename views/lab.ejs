@@ -1,0 +1,44 @@
+<%- include('includes/header') %>
+<div id="site-body">
+<ul id="lab-list">
+  <% for(var i=0; i<lab.length; i++) {%>
+   <li id="<%= lab[i].tag %>" class="lab-item">
+       <div class="lab-label">
+         <h2 class="lab-title"><%= lab[i].title %><span  class="lab-date"><%= lab[i].date %></span></h2>
+         <div class="lab-hover">
+           <div class="hover-img">
+             <img src="/img/<%= lab[i].img %>" alt="">
+             <div class="hover-text">
+               <ul>
+                 <li><a href="<%= lab[i].code %>" title="CODE"  target="_blank"><i class="fab fa-github"></i></a></li>
+                 <%if (lab[i].demo != "NONE") { %>
+                 <li><a href="<%= lab[i].demo %>" title="DEMO"><i class="fa fa-globe" aria-hidden="true"  target="_blank"></i></a></li>
+                 <% } %>
+               </ul>
+             </div>
+           </div>
+         </div>
+         <ul class="lab-details">
+           <li class="lab-summary"></li>
+           <li class="lab-footer">
+             <ul class="lab-tools">
+               <!-- <li class="lab-tools-item"><i class="fab fa-node"></i></li> -->
+               <div class="dropdown">
+                 <button class="lab-btn lab-tools-btn" href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                 <div class="dropdown-content">
+                   <%if (lab[i].demo != "NONE") { %>
+                   <a href="<%= lab[i].demo %>"  target="_blank">DEMO</a>
+                   <% } %>
+                   <a href="<%= lab[i].code %>"  target="_blank">CODE</a>
+                 </div>
+               </div>
+             </ul>
+           </li>
+         </ul>
+
+       </div>
+   </li>
+<% } %>
+</ul>
+</div>
+<%- include('includes/footer') %>

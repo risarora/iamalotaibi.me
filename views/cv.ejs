@@ -1,0 +1,199 @@
+<%- include('includes/header') %>
+<div id="site-body">
+  <main id="site-content">
+        <ul id="resume-display">
+          <li class="resume-item" id="ed">
+            <h2 class="item-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+            <ul class="item-list">
+              <% for(var i=0; i<cv.ed.length; i++) {%>
+              <li class="item-work">
+                <h3 class="title"><%= cv.ed[i].school %><button type="button" name="button" title="Show Completed Courses" id="courses-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> <%= cv.ed[i].date %></span></h3>
+                <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <%= cv.ed[i].location %></h4>
+                <div class="details">
+                  <% if(cv.ed[i].major != "NONE") {%>
+                  <p>Major: <%= cv.ed[i].major %></p>
+                  <% } %>
+                  <% if(cv.ed[i].major != "NONE") {%>
+                  <p>Minor: <%= cv.ed[i].minor %></p>
+                  <% } %>
+                </div>
+              </li>
+              <% } %>
+            </ul>
+            <div id="courses-list" class="hide">
+              <ul>
+                <li>
+                  <h5>COMPUTER SCIENCE</h5>
+                  <ul>
+                    <div class="skill-box">
+                      <li>DATA STRUCTURES (CS-261)</li>
+                      <li>COMPUTER ARCHITECTURE AND ASSEMBLY LANGUAGE (CS-271)</li>
+                      <li>DIGITAL LOGIC DESIGN WITH LAB(ECE-271 & ECE-272)</li>
+                      <li>WEB DEVELOPMENT (CS-290)</li>
+                      <li>INTRODUCTION TO THEORY OF COMPUTATION (CS-321)</li>
+                      <li>ANALYSIS OF ALGORITHMS (CS-325)</li>
+                      <!--<li>INTRODUCTION TO ARTIFICIAL INTELLIGENCE (CS-331)</li>
+                      <li>INTRODUCTION TO DATABASES (CS-340)</li>
+                      <li>OPERATING SYSTEMS I (CS-344)</li> -->
+                      <!-- <li>OPERATING SYSTEMS I & II (CS-344 & CS-444)</li> -->
+                    </div>
+                    <div class="skill-box">
+                    <li>INTRODUCTION TO ARTIFICIAL INTELLIGENCE (CS-331)</li>
+                    <li>INTRODUCTION TO DATABASES (CS-340)</li>
+                    <li>OPERATING SYSTEMS I (CS-344)</li>
+                      <!-- <li>INTRODUCTION TO USABILITY ENGINEERING (CS-352)</li> -->
+                      <li>SOFTWARE ENGINEERING I & II (CS-361 & CS-362)</li>
+                      <li>INTRODUCTION TO COMPUTER NETWORKS (CS-372)</li>
+                      <!-- <li>PROGRAMMING LANGUAGE FUNDAMENTALS (CS-381)</li> -->
+                      <!-- <li>GRAPH THEORY WITH APPLICATIONS TO COMPUTER SCIENCE (CS-420)</li> -->
+                      <li>INTRODUCTION TO MACHINE LEARNING AND DATA MINING (CS-434)</li>
+                      <!-- <li>Intelligent Robotics (ROB-456)</li> -->
+                      <!-- <li>SENIOR SOFTWARE ENGINEERING PROJECT I, II, & III (CS-461, CS-462, & CS-463)</li> -->
+                      <li>INTRODUCTION TO PARALLEL PROGRAMMING (CS-475)</li>
+                    </div>
+                  </ul>
+                </li>
+                <li>
+                  <h5>MATHEMATICS</h5>
+                  <ul>
+                    <li>ELEMENTS OF DISCRETE MATHEMATICS (MTH-231)</li>
+                    <li>DIFFERENTIAL CALCULUS (MTH-251)</li>
+                    <li>INTEGRAL CALCULUS (MTH-252)</li>
+                    <li>INFINITE SERIES AND SEQUENCES (MTH-253)</li>
+                    <li>VECTOR CALCULUS I (MTH-254)</li>
+                    <li>MATRIX AND POWER SERIES METHODS (MTH-306)</li>
+                    <li>LINEAR ALGEBRA I (MTH-341)</li>
+                    <li>INTRODUCTION TO NUMERICAL ANALYSIS (MTH-351)</li>
+                    <!-- <li>INTRODUCTION TO PROBABILITY (MTH-361)</li> -->
+                    <!-- <li>INTRODUCTION TO MATHEMATICAL STATISTICS (ST-421 & ST 422)</li> -->
+                  </ul>
+                </li>
+                <li>
+                  <h5>OTHERS</h5>
+                  <ul>
+                    <li>FIRST-YEAR JAPANESE (JPN-111)</li>
+                    <li>INTRODUCTION TO MICROECONOMICS (ECON-201)</li>
+                    <li>TECHNICAL WRITING (WR-327)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="resume-item" id="ex">
+            <h2 class="item-title"><i class="fa fa-cogs" aria-hidden="true"></i> Experience</h2>
+            <ul class="item-list">
+              <% for(var i=0; i<cv.ex.length; i++) {%>
+              <li class="item-work">
+                <h3 class="title"><%= cv.ex[i].event %><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> <%= cv.ex[i].date %></span></h3>
+                <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <%= cv.ex[i].location %></h4>
+                <div class="details">
+                  <p><%= cv.ex[i].postion %></p>
+                  <ul>
+                    <% for(var j=0; j<cv.ex[i].details.length; j++) {%>
+                    <li><%= cv.ex[i].details[j].statement %></li>
+                    <% } %>
+                  </ul>
+                </div>
+              </li>
+              <% } %>
+            </ul>
+          </li>
+          <li class="resume-item" id="pro">
+            <h2 class="item-title"><i class="fa fa-folder-open" aria-hidden="true"></i> Projects</h2>
+            <ul class="item-list">
+              <% for(var i=0; i<lab.length; i++) {%>
+              <li class="item-work">
+                <h3 class="title"><a href="/lab/#<%= lab[i].tag %>"  target="_blank"><%= lab[i].title %></a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> <%= lab[i].date %></span></h3>
+                <div class="details">
+                  <p><%= lab[i].summary %></p>
+                  <ul>
+                    <% for(var j=0; j<lab[i].accomplishments.length; j++) {%>
+                    <li><%= lab[i].accomplishments[j].statement %></li>
+                    <% } %>
+                  </ul>
+                </div>
+              </li>
+              <% } %>
+            </ul>
+          </li>
+          <li class="resume-item" id="act">
+            <h2 class="item-title"><i class="fa fa-rocket" aria-hidden="true"></i> Extracurricular Activities</h2>
+            <ul class="item-list">
+              <% for(var i=0; i<cv.act.length; i++) {%>
+              <li class="item-work">
+                <h3 class="title"><%= cv.act[i].title %><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> <%= cv.act[i].date %></span></h3>
+                <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <%= cv.act[i].location %></h4>
+                <div class="details">
+                  <p><%= cv.act[i].position %></p>
+                  <ul>
+                    <% for(var j=0; j<cv.act[i].details.length; j++) {%>
+                    <li><%= cv.act[i].details[j].statement %></li>
+                    <% } %>
+                  </ul>
+                </div>
+              </li>
+              <% } %>
+            </ul>
+          </li>
+          <li class="resume-item">
+            <h2 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Skills</h2>
+            <div class="skill-box">
+              <div class="skill-block">
+                <ul class="skill-set">
+                    <li><h4 class="skill-title">I/O Languages:</h4></li>
+                    <li class="skill-list">C/C++ <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">Java</li>
+                </ul>
+                <ul class="skill-set">
+                    <li><h4 class="skill-title">Scripting Languages:</h4></li>
+                    <li class="skill-list">JavaScript <i class="fas fa-heart"></i></li>
+                    <li class="skill-list">Python <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">R <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">Bash <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">MatLab</li>
+                </ul>
+                <ul class="skill-set">
+                    <li><h4 class="skill-title">Database:</h4></li>
+                    <li class="skill-list">NodeJS <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">SQL <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">NoSQL(JSON) <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">PHP</li>
+                </ul>
+                <ul class="skill-set">
+                    <li><h4 class="skill-title">Libraries:</h4></li>
+                    <li class="skill-list">Numpy <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">Pytorch <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">TensorFlow <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">OpenCV <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-block">
+                <ul class="skill-set">
+                    <li><h4 class="skill-title">Tools:</h4></li>
+                    <li class="skill-list">Git <i class="fas fa-heart" title="I LOVE IT"></i></i></li>
+                    <li class="skill-list">LaTeX <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">R Markdown <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                </ul>
+                <ul class="skill-set">
+                    <li><h4 class="skill-title">Operating System:</h4></li>
+                    <li class="skill-list">GNU/Linux(Arch and Ubuntu) <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">MacOS <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                    <li class="skill-list">Windows</li>
+                </ul>
+                <ul class="skill-set">
+                    <li><h4 class="skill-title">Languages:</h4></li>
+                    <li class="skill-list">Arabic (Native)</li>
+                    <li class="skill-list">English (Professional Proficiency)</li>
+                    <li class="skill-list"> Japanese (Elementary Proficiency)</li>
+                </ul>
+              </div>
+        </div>
+        </li>
+        <div id="download-area">
+          <a id="download-btn" href="/pdf/cv.pdf"  target="_blank"><i class="fas fa-cloud-download"></i> DOWNLOAD</a>
+        </div>
+      </main>
+      </div>
+<%- include('includes/footer') %>

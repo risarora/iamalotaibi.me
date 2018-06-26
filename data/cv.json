@@ -1,0 +1,85 @@
+{
+  "ed": [
+    {
+      "school": "Oregon State Univeristy",
+      "location": "Corvallis, OR (USA)",
+      "date": "09/2015 - 06/2019(expected date)",
+      "major": "Computer Science Applied in Artificial Intelligence, Bachelor of Science",
+      "minor": "Actuarial Science, Bachelor of Science",
+      "courses": "NONE"
+    }
+  ],
+  "ex": [
+    {
+      "event": "DesertHacks (Hackathon)",
+      "location": "Phoenix, AZ (USA)",
+      "date": "02/2017",
+      "position": "Participant",
+      "details": [
+        {
+          "statement": "Worked with an indiviual to build a simple web application that analysis a user's behavior."
+        },
+        {
+          "statement": "Used AWS to host our website."
+        }
+      ]
+    }
+  ],
+  "act": [
+    {
+      "title": "OSU Machine Learning Club",
+      "location": "Corvallis, OR (USA)",
+      "date": "05/2017 - Present",
+      "position": "Active Member",
+      "details": [
+        {
+          "statement": "Worked with a team to make a Self-Driving RC Car."
+        },
+        {
+          "statement": "Applied my knowledge in web development and machine learning to build the first prototype."
+        }
+      ]
+    },
+    {
+      "title": "OSU App Club",
+      "location": "Corvallis, OR (USA)",
+      "date": "09/2016 - 11/2017",
+      "position": "Active Member",
+      "details": [
+        {
+          "statement": "Worked to build small projects using new tools with a club member."
+        },
+        {
+          "statement": "Helped members in explaining about web development and common practice."
+        }
+      ]
+    },
+    {
+      "title": "Saudi Aramco Summer Program",
+      "location": "Dhahran, Eastern Province (Saudi Arabia)",
+      "date": "Summer 2012",
+      "position": "Lead Photographer",
+      "details": [
+        {
+          "statement": "Managed a team of 6 photographers to document summer program events."
+        },
+        {
+          "statement": "Hosted and organized multiple teaching photography sessions for more than 70 inspired photographers."
+        }
+      ]
+    }
+  ],
+  "skills":[
+    [
+      {
+        "title": "JavaScript",
+        "love": "T"
+      },
+      {
+        "title": "JavaScript",
+        "love": "T"
+      }
+    ]
+  ]
+
+}
