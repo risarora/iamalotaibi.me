@@ -26,7 +26,7 @@
     "img": "no-image.jpg",
     "code": "https://github.com/iamalotaibi/Display-Me",
     "demo": "https://displayme.herokuapp.com",
-    "summary": "An ML project that aims to practice image classification using MLP to compare performance to CNN performance.",
+    "summary": "An ML project that aims to train image classification using MLP to compare performance to CNN performance.",
     "accomplishments": [
       {
         "statement": "Wrote an MLP Multiple Layer Neural Networks using Python."
